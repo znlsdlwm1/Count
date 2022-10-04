@@ -23,7 +23,7 @@ count 수는 idx를 count로 해서 reg_date값으로 무슨 년도 월일에 �
 SELECT </br>
   TO_CHAR(REG_DATE, 'YYYY-MMDD') AS REGDATE</br>
   ,COUNT(idx) AS aCount</br>
-FROM KMDB.downloadCount </br>
+FROM downloadCount </br>
  WHERE idx =  '67' </br>
  AND TO_CHAR(REG_DATE, 'YYYY-MM') =  '2022-09'</br>
 GROUP BY TO_CHAR(REG_DATE, 'YYYY-MMDD')
